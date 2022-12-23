@@ -5,7 +5,6 @@ html {
 }
 
 section {
-  outline: 2px solid tomato;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -191,6 +190,10 @@ img {
   border-radius: 4px;
   border-color: rgba(255, 255, 255, 0.3);
   background-color: inherit;
+  color: inherit;
+}
+.footer-email:focus-visible {
+  outline: 1px solid #ffffff;
 }
 .footer-email ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
@@ -274,19 +277,19 @@ img {
 }
 
 .antena::before {
-  background-image: url("../../images/antena.svg");
+  background-image: url("../images/antena.svg");
 }
 
 .clock::before {
-  background-image: url("../../images/clock.svg");
+  background-image: url("../images/clock.svg");
 }
 
 .diagram::before {
-  background-image: url("../../images/diagram.svg");
+  background-image: url("../images/diagram.svg");
 }
 
 .astronaut::before {
-  background-image: url("../../images/astronaut.svg");
+  background-image: url("../images/astronaut.svg");
 }
 
 .whatWeDo {
