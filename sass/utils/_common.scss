@@ -1,0 +1,25 @@
+.accent {
+    color: var(--accent-color);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+.title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    // font-size: 36px;
+    // line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}

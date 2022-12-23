@@ -1,0 +1,19 @@
+.nav-list,
+.contact-link {
+    display: none;
+}
+.mob-menu {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-burger {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    &:hover svg {
+        fill: var(--accent-color);
+    }
+}
+.close-burger.is-hidden {
+    display: none;
+}

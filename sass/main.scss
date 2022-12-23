@@ -1,0 +1,17 @@
+@import "./base/global";
+@import "./base/container";
+
+@import "./utils/variables";
+@import "./utils/common";
+
+@import "./components/logo";
+@import "./components/button";
+
+@import "./layouts/header";
+@import "./layouts/footer";
+
+@import "./layouts/section-hero";
+@import "./layouts/section-advantages";
+@import "./layouts/section-whatWeDo";
+@import "./layouts/section-team";
+@import "./layouts/section-customers";

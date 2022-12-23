@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section {
+    outline: 2px solid tomato;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+a {
+    color: var(--main-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+}
+
