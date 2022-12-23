@@ -1,0 +1,76 @@
+
+.nav-list {
+    display: block;
+    margin-bottom: 306px;
+
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    .item:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    .item a:hover {
+        color: var(--accent-color);
+    }
+}
+.contact-link {
+    display: flex;
+    flex-direction: column-reverse;
+
+    svg {
+        display: none;
+    }
+    .mail {
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: #757575;
+        margin-bottom: 64px;
+    }
+    .phone {
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+        margin-bottom: 32px;
+    }
+}
+.social-link-list {
+      display: flex;
+      margin-bottom: 48px;
+
+    .item {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    .item a {
+        color: var(--accent-color);
+    }
+    .item:first-child {
+        padding-left: 0;
+        border: none;
+    }
+    .item:last-child {
+        padding-right: 0;
+    }
+}
+
+.btn-burger {
+    .close-burger {
+        display: none;
+    }
+    &.is-open .close-burger {
+        display: block;
+    }
+    &.is-open .open-burger {
+        display: none;
+    }
+}
+.menu {
+    display: none;
+    &.is-open{
+        display: block;
+    }
+}
