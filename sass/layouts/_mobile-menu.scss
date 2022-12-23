@@ -1,14 +1,13 @@
-
 .nav-list {
     display: block;
-    margin-bottom: 306px;
+    margin-bottom: 310px;
 
     font-size: 40px;
     line-height: 1.17;
     letter-spacing: 0.02em;
 
     .item:not(:last-child) {
-        margin-bottom: 25px;
+        margin-bottom: 32px;
     }
     .item a:hover {
         color: var(--accent-color);
@@ -37,8 +36,10 @@
     }
 }
 .social-link-list {
-      display: flex;
-      margin-bottom: 48px;
+    display: flex;
+
+    font-size: 18px;
+    line-height: 1.22;
 
     .item {
         padding-left: 10px;
@@ -56,8 +57,16 @@
         padding-right: 0;
     }
 }
+.header {
+    position: relative;
+}
 
 .btn-burger {
+    &.is-open {
+        position: absolute;
+        top: 8px;
+        right: 0;
+    }
     .close-burger {
         display: none;
     }
@@ -68,9 +77,13 @@
         display: none;
     }
 }
-.menu {
+.menu-container {
     display: none;
-    &.is-open{
+    &.is-open {
         display: block;
+        max-width: 480px;
+        padding-left: 40px;
+        margin-bottom: 48px;
+        margin-top: 48px;
     }
 }

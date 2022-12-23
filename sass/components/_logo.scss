@@ -4,7 +4,6 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
-
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     // font-size: 26px;
@@ -15,7 +14,7 @@
     letter-spacing: 0.03em;
     color: #000000;
 
-    &.is-hidden{
-        opacity: 0;
+    &.is-hidden {
+        display: none;
     }
 }

@@ -93,7 +93,7 @@ img {
   color: #000000;
 }
 .logo.is-hidden {
-  opacity: 0;
+  display: none;
 }
 
 .hero-button, .footer-btn {
@@ -122,6 +122,7 @@ img {
 }
 
 .mob-menu {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -398,13 +399,13 @@ img {
 
 .nav-list {
   display: block;
-  margin-bottom: 306px;
+  margin-bottom: 310px;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
 }
 .nav-list .item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 32px;
 }
 .nav-list .item a:hover {
   color: var(--accent-color);
@@ -434,7 +435,8 @@ img {
 
 .social-link-list {
   display: flex;
-  margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 1.22;
 }
 .social-link-list .item {
   padding-left: 10px;
@@ -452,6 +454,15 @@ img {
   padding-right: 0;
 }
 
+.header {
+  position: relative;
+}
+
+.btn-burger.is-open {
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
 .btn-burger .close-burger {
   display: none;
 }
@@ -462,11 +473,15 @@ img {
   display: none;
 }
 
-.menu {
+.menu-container {
   display: none;
 }
-.menu.is-open {
+.menu-container.is-open {
   display: block;
+  max-width: 480px;
+  padding-left: 40px;
+  margin-bottom: 48px;
+  margin-top: 48px;
 }
 
 .backdrop.is-hidden {
