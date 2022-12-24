@@ -397,9 +397,24 @@ img {
   fill: #afb1b8;
 }
 
+.header {
+  position: relative;
+}
+
+.menu-container {
+  display: none;
+}
+.menu-container.is-open {
+  display: block;
+  max-width: 480px;
+  padding-left: 25px;
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
+
 .nav-list {
   display: block;
-  margin-bottom: 310px;
+  margin-bottom: 306px;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -454,10 +469,6 @@ img {
   padding-right: 0;
 }
 
-.header {
-  position: relative;
-}
-
 .btn-burger.is-open {
   position: absolute;
   top: 8px;
@@ -471,17 +482,6 @@ img {
 }
 .btn-burger.is-open .open-burger {
   display: none;
-}
-
-.menu-container {
-  display: none;
-}
-.menu-container.is-open {
-  display: block;
-  max-width: 480px;
-  padding-left: 40px;
-  margin-bottom: 48px;
-  margin-top: 48px;
 }
 
 .backdrop.is-hidden {

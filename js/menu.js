@@ -1,14 +1,11 @@
-(() => {
-  const menuBtnRef = document.querySelector('[data-menu-button]');
-  const mobileMenuRef = document.querySelector('[data-menu]');
-  const logoHidden = document.querySelector('[data-logo-hidden]');
-  // modal: document.querySelector('[data-modal]'),
+const ref = {
+  menuBtnRef: document.querySelector('[data-menu-button]'),
+  mobileMenuRef: document.querySelector('[data-menu]'),
+  logoHidden: document.querySelector('[data-logo-hidden]'),
+};
 
-  menuBtnRef.addEventListener('click', () => {
-    menuBtnRef.classList.toggle('is-open');
-    mobileMenuRef.classList.toggle('is-open');
-    logoHidden.classList.toggle('is-hidden');
-
-  });
-  // refs.closeModalBtn.addEventListener('click', toggleModal);
-})();
+ref.menuBtnRef.addEventListener('click', () => {
+  ref.menuBtnRef.classList.toggle('is-open');
+  ref.mobileMenuRef.classList.toggle('is-open');
+  ref.logoHidden.classList.toggle('is-hidden');
+});

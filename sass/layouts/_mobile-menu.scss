@@ -1,6 +1,21 @@
+.header {
+    position: relative;
+}
+
+.menu-container {
+    display: none;
+    &.is-open {
+        display: block;
+        max-width: 480px;
+        padding-left: 25px;
+        margin-bottom: 48px;
+        margin-top: 48px;
+    }
+}
+
 .nav-list {
     display: block;
-    margin-bottom: 310px;
+    margin-bottom: 306px;
 
     font-size: 40px;
     line-height: 1.17;
@@ -57,9 +72,6 @@
         padding-right: 0;
     }
 }
-.header {
-    position: relative;
-}
 
 .btn-burger {
     &.is-open {
@@ -75,15 +87,5 @@
     }
     &.is-open .open-burger {
         display: none;
-    }
-}
-.menu-container {
-    display: none;
-    &.is-open {
-        display: block;
-        max-width: 480px;
-        padding-left: 40px;
-        margin-bottom: 48px;
-        margin-top: 48px;
     }
 }
