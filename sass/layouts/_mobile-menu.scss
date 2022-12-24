@@ -5,7 +5,9 @@
 .menu-container {
     display: none;
     &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         max-height: 100vh;
 
         max-width: 480px;
@@ -42,7 +44,7 @@
         line-height: 1.17;
         letter-spacing: 0.02em;
         // color: #757575;
-        color: red;
+        color: green;
         margin-bottom: 64px;
     }
     .phone {
