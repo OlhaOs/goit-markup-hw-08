@@ -408,15 +408,15 @@ img {
   display: block;
   max-width: 480px;
   padding-left: 25px;
-  margin-bottom: 48px;
-  margin-top: 48px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .nav-list {
   display: block;
   margin-bottom: 306px;
   font-size: 40px;
-  line-height: 1.17;
+  line-height: 1.18;
   letter-spacing: 0.02em;
 }
 .nav-list .item:not(:last-child) {
