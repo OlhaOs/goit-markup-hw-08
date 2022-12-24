@@ -114,11 +114,16 @@ img {
   color: #ffffff;
 }
 .btn-form:hover, .hero-button:hover, .footer-btn:hover {
-  background-color: #0571c9;
+  background-color: #188CE8;
   color: #ffffff;
 }
 .btn-form:active, .hero-button:active, .footer-btn:active {
   background-color: #02579d;
+}
+
+.header {
+  position: relative;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav-list,
@@ -402,16 +407,13 @@ img {
   fill: #afb1b8;
 }
 
-.header {
-  position: relative;
-}
-
 .menu-container {
   display: none;
 }
 .menu-container.is-open {
   display: block;
   max-height: 100vh;
+  overflow: hidden;
   max-width: 480px;
   padding-left: 25px;
   padding-bottom: 50px;
@@ -456,7 +458,6 @@ img {
 
 .social-link-list {
   display: flex;
-  flex-wrap: wrap;
   font-size: 18px;
   line-height: 1.22;
 }
@@ -538,8 +539,8 @@ img {
 }
 
 .field-form {
-  margin-bottom: 10px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .input-form {
@@ -667,12 +668,13 @@ img {
   border: 2px solid var(--accent-color);
 }
 
-.field-form.submit-button {
+.submit-button {
   text-align: center;
   margin-bottom: 0;
 }
 
 .btn-form {
   width: 200px;
-  padding: 10px 80px;
+  height: 50px;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

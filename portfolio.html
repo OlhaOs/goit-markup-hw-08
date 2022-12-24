@@ -11,46 +11,71 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/main.min.css">
-    <link rel="stylesheet" href="./dist/css/portfolio.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-   
+    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/portfolio.min.css">
+
+
 
 </head>
 
 <body>
-    <header>
-        <div class="container header-design">
-            <nav>
-                <a href="index.html" class="logo"><span class="accent">Web</span>Studio</a>
-                <ul class="nav-list">
-                    <li><a href="./index.html" class="nav-link">Студія</a></li>
-                    <li><a href="#" class="nav-link accent">Портфоліо</a></li>
-                    <li><a href="#" class="nav-link">Контакти</a></li>
-                </ul>
-            </nav>
-            <div class="contact-link">
-                <a href="mailto:contact@forstudy.space" target="_blank" rel="nofollow noopener" class="mail">
-                    <svg class="icon-envelope">
-                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
+    <header class="header">
+        <div class="container">
+            <div class="mob-menu">
+                <a href="index.html" class="logo" data-logo-hidden><span class="accent">Web</span>Studio</a>
+                <button type="button" class="btn-burger" data-menu-button>
+                    <svg width="40px" height="40" aria-label="switch mobile menu">
+                        <use class="open-burger" href="./images/svg/symbol-defs-mobile.svg#icon-menu">
+                        </use>
+                        <use class="close-burger" href="./images/svg/symbol-defs-mobile.svg#icon-close">
+                        </use>
                     </svg>
-                    info@devstudio.com</a>
-                <a href="tel:+380961111111" target="_blank" rel="nofollow noopener" class="phone">
-                    <svg class="icon-phone">
-                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11</a>
+                </button>
+            </div>
+            <div class="menu-container" data-menu>
+                <nav>
+                    <ul class="nav-list">
+                        <li class="item"><a href="./index.html" class="nav-link">Studio</a></li>
+                        <li class="item"><a href="#" class="nav-link">Portfolio</a></li>
+                        <li class="item"><a href="#" class="nav-link">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-link">
+                    <a href="mailto:contact@forstudy.space" target="_blank" rel="nofollow noopener" class="mail">
+                        <svg class="icon-envelope">
+                            <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
+                    <a href="tel:+380961111111" target="_blank" rel="nofollow noopener" class="phone">
+                        <svg class="icon-phone">
+                            <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                        </svg>
+                        +1 212-772-4150</a>
+                </div>
+
+                <div class="link-mobile">
+                    <ul class="social-link-list is-hidden">
+                        <li class="item"><a href="#">Instagram</a> </li>
+                        <li class="item"><a href="#">Twitter</a> </li>
+                        <li class="item"><a href="#">Facebook</a> </li>
+                        <li class="item"><a href="#">LinkedIn</a> </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     <main>
         <section class="filter container">
             <ul class="filter-list">
-                <li><button class="btn btn-filter" type="button">Усі</button></li>
-                <li><button class="btn btn-filter" type="button">Веб-сайти</button></li>
-                <li><button class="btn btn-filter" type="button">Додатки</button></li>
-                <li><button class="btn btn-filter" type="button">Дизайн</button></li>
-                <li><button class="btn btn-filter" type="button">Маркетинг</button></li>
+                <li class="item"><button class="btn-filter" type="button">All</button></li>
+                <li class="item"><button class="btn-filter" type="button">Web-site</button></li>
+                <li class="item"><button class="btn-filter" type="button">Apps</button></li>
+                <li class="item"><button class="btn-filter" type="button">Design</button></li>
+                <li class="item"><button class="btn-filter" type="button">Marketing</button></li>
             </ul>
         </section>
         <section class="portfolio container">
@@ -58,82 +83,82 @@
                 <li class="portfolio-card">
                     <a href="#" class="portfolio-link">
                         <div class="card-decoration">
-                            <img src="./images/technokryak.jpg" alt="technokryak">
+                            <img src="../images/technokryak.jpg" alt="technokryak">
                             <p class="overlay">Technoduck is a state-of-the-art coronavirus distribution platform.
                                 Companies use this
                                 platform for digital espionage and attacks on competitors' secure servers.</p>
                         </div>
 
                         <div class="card-description">
-                            <h2 class="portfolio-title">Технокряк</h2>
-                            <p class="portfolio-text">Веб-сайт</p>
+                            <h2 class="portfolio-title">Technoduck</h2>
+                            <p class="portfolio-text">Web-site</p>
                         </div>
                     </a>
                 </li>
                 <li class="portfolio-card">
                     <a href="#" class="portfolio-link">
                         <div class="card-decoration">
-                            <img src="./images/newOrleanvsGoldenStar.jpg" alt="newOrleanvsGoldenStar">
+                            <img src="../images/newOrleanvsGoldenStar.jpg" alt="newOrleanvsGoldenStar">
                             <p class="overlay">Technoduck is a state-of-the-art coronavirus distribution platform.
                                 Companies use this
                                 platform for digital espionage and attacks on competitors' secure servers.</p>
                         </div>
 
                         <div class="card-description">
-                            <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
-                            <p class="portfolio-text">Дизайн</p>
+                            <h2 class="portfolio-title">Poster New Orlean vs Golden Star</h2>
+                            <p class="portfolio-text">Design</p>
                         </div>
                     </a>
                 </li>
                 <li class="portfolio-card">
                     <a href="#" class="portfolio-link">
                         <div class="card-decoration">
-                            <img src="./images/seafood.jpg" alt="seafood">
+                            <img src="../images/seafood.jpg" alt="seafood">
                             <p class="overlay">Technoduck is a state-of-the-art coronavirus distribution platform.
                                 Companies use this
                                 platform for digital espionage and attacks on competitors' secure servers.</p>
                         </div>
 
                         <div class="card-description">
-                            <h2 class="portfolio-title">Ресторан Seafood</h2>
-                            <p class="portfolio-text">Додаток</p>
+                            <h2 class="portfolio-title">Seafood Restaurant</h2>
+                            <p class="portfolio-text">Apps</p>
                         </div>
                     </a>
                 </li>
                 <li class="portfolio-card">
                     <a href="#" class="portfolio-link">
                         <div class="card-decoration">
-                            <img src="./images/projectPrime.jpg" alt="projectPrime">
+                            <img src="../images/projectPrime.jpg" alt="projectPrime">
                             <p class="overlay">Technoduck is a state-of-the-art coronavirus distribution platform.
                                 Companies use this
                                 platform for digital espionage and attacks on competitors' secure servers.</p>
                         </div>
 
                         <div class="card-description">
-                            <h2 class="portfolio-title">Проєкт Prime</h2>
-                            <p class="portfolio-text">Маркетинг</p>
+                            <h2 class="portfolio-title">Project Prime</h2>
+                            <p class="portfolio-text">Marketing</p>
                         </div>
                     </a>
                 </li>
                 <li class="portfolio-card">
                     <a href="#" class="portfolio-link">
                         <div class="card-decoration">
-                            <img src="./images/projectBoxes.jpg" alt="projectBoxes">
+                            <img src="../images/projectBoxes.jpg" alt="projectBoxes">
                             <p class="overlay">Technoduck is a state-of-the-art coronavirus distribution platform.
                                 Companies use this
                                 platform for digital espionage and attacks on competitors' secure servers.</p>
                         </div>
 
                         <div class="card-description">
-                            <h2 class="portfolio-title">Проєкт Boxes</h2>
-                            <p class="portfolio-text">Додаток</p>
+                            <h2 class="portfolio-title">Project Boxes</h2>
+                            <p class="portfolio-text">Apps</p>
                         </div>
                     </a>
                 </li>
                 <li class="portfolio-card">
                     <a href="#" class="portfolio-link">
                         <div class="card-decoration">
-                            <img src="./images/inspirationBorders.jpg" alt="inspirationBorders">
+                            <img src="../images/inspirationBorders.jpg" alt="inspirationBorders">
                             <p class="overlay">Technoduck is a state-of-the-art coronavirus distribution platform.
                                 Companies use this
                                 platform for digital espionage and attacks on competitors' secure servers.</p>
@@ -141,7 +166,7 @@
 
                         <div class="card-description">
                             <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                            <p class="portfolio-text">Веб-сайт</p>
+                            <p class="portfolio-text">Web-site</p>
                         </div>
                     </a>
                 </li>
@@ -149,15 +174,15 @@
                 <li class="portfolio-card">
                     <a href="#" class="portfolio-link">
                         <div class="card-decoration">
-                            <img src="./images/limitedEdition.jpg" alt="limitedEdition">
+                            <img src="../images/limitedEdition.jpg" alt="limitedEdition">
                             <p class="overlay">Technoduck is a state-of-the-art coronavirus distribution platform.
                                 Companies use this
                                 platform for digital espionage and attacks on competitors' secure servers.</p>
                         </div>
 
                         <div class="card-description">
-                            <h2 class="portfolio-title">Видання Limited Edition</h2>
-                            <p class="portfolio-text">Дизайн</p>
+                            <h2 class="portfolio-title">Limited Edition</h2>
+                            <p class="portfolio-text">Design</p>
                         </div>
                     </a>
                 </li>
@@ -165,22 +190,22 @@
                 <li class="portfolio-card">
                     <a href="#" class="portfolio-link">
                         <div class="card-decoration">
-                            <img src="./images/projectLAB.jpg" alt="projectLAB">
+                            <img src="../images/projectLAB.jpg" alt="projectLAB">
                             <p class="overlay">Technoduck is a state-of-the-art coronavirus distribution platform.
                                 Companies use this
                                 platform for digital espionage and attacks on competitors' secure servers.</p>
                         </div>
 
                         <div class="card-description">
-                            <h2 class="portfolio-title">Проєкт LAB</h2>
-                            <p class="portfolio-text">Маркетинг</p>
+                            <h2 class="portfolio-title">Project LAB</h2>
+                            <p class="portfolio-text">Marketing</p>
                         </div>
                     </a>
                 </li>
                 <li class="portfolio-card">
                     <a href="#" class="portfolio-link">
                         <div class="card-decoration">
-                            <img src="./images/growingBusiness.jpg" alt="growingBusiness">
+                            <img src="../images/growingBusiness.jpg" alt="growingBusiness">
                             <p class="overlay">Technoduck is a state-of-the-art coronavirus distribution platform.
                                 Companies use this
                                 platform for digital espionage and attacks on competitors' secure servers.</p>
@@ -188,7 +213,7 @@
 
                         <div class="card-description">
                             <h2 class="portfolio-title"> Growing Business</h2>
-                            <p class="portfolio-text">Додаток</p>
+                            <p class="portfolio-text">Apps</p>
                         </div>
                     </a>
                 </li>
@@ -325,6 +350,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

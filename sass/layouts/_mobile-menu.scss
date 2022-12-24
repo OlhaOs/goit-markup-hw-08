@@ -1,12 +1,9 @@
-.header {
-    position: relative;
-}
-
 .menu-container {
     display: none;
     &.is-open {
         display: block;
         max-height: 100vh;
+         overflow: hidden;
 
         max-width: 480px;
         padding-left: 25px;
@@ -54,7 +51,7 @@
 }
 .social-link-list {
     display: flex;
-    flex-wrap: wrap;
+   
 
     font-size: 18px;
     line-height: 1.22;
