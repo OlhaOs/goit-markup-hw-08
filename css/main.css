@@ -652,19 +652,13 @@ img {
 
 .checkbox:checked + .check {
   background-color: var(--accent-color);
-  background-image: url("../../images/svg/icon check.svg");
+  background-image: url("../mages/svg/icon check.svg");
   border: 2px solid var(--accent-color);
 }
 
 .checkbox:checked:focus + .check {
   background-color: var(--accent-color);
-  background-image: url("../../images/svg/icon check.svg");
-  border: 2px solid #277cc1;
-}
-
-.checkbox:checked:active + .check {
-  background-color: var(--accent-color);
-  background-image: url("../../images/svg/icon check.svg");
+  background-image: url("../images/svg/icon check.svg");
   border: 2px solid #277cc1;
 }
 
