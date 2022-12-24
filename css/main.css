@@ -411,8 +411,10 @@ img {
   display: none;
 }
 .menu-container.is-open {
-  display: block;
-  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   overflow: hidden;
   max-width: 480px;
   padding-left: 25px;
@@ -422,7 +424,6 @@ img {
 
 .nav-list {
   display: block;
-  margin-bottom: 306px;
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
