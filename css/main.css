@@ -21,6 +21,10 @@ body {
   font-size: 14px;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   color: var(--main-color);
   cursor: pointer;
@@ -42,6 +46,7 @@ img {
 }
 
 .container {
+  width: 100%;
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
@@ -451,6 +456,7 @@ img {
 
 .social-link-list {
   display: flex;
+  flex-wrap: wrap;
   font-size: 18px;
   line-height: 1.22;
 }
@@ -500,7 +506,7 @@ img {
 }
 
 .modal {
-  position: fixed;
+  position: relative;
   padding: 40px;
   margin: 93px 15px;
   background-color: #fff;
@@ -651,6 +657,12 @@ img {
 }
 
 .checkbox:checked:focus + .check {
+  background-color: var(--accent-color);
+  background-image: url("../../images/svg/icon check.svg");
+  border: 2px solid #277cc1;
+}
+
+.checkbox:checked:active + .check {
   background-color: var(--accent-color);
   background-image: url("../../images/svg/icon check.svg");
   border: 2px solid #277cc1;

@@ -5,7 +5,7 @@ html {
 }
 
 section {
-    // outline: 2px solid tomato;
+
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -20,6 +20,10 @@ body {
     font-weight: 500;
     font-size: 14px;
 }
+body.modal-open {
+    overflow: hidden;
+}
+
 a {
     color: var(--main-color);
     cursor: pointer;
@@ -37,4 +41,3 @@ li {
 img {
     display: block;
 }
-
