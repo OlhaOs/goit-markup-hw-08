@@ -406,10 +406,11 @@ img {
 }
 .menu-container.is-open {
   display: block;
+  max-height: 100vh;
   max-width: 480px;
   padding-left: 25px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 .nav-list {
@@ -450,6 +451,7 @@ img {
 
 .social-link-list {
   display: flex;
+  padding-right: 83px;
   font-size: 18px;
   line-height: 1.22;
 }
