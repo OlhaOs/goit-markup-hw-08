@@ -53,8 +53,8 @@
   height: 294px;
 }
 .card-decoration img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

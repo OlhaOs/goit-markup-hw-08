@@ -420,6 +420,7 @@ img {
   max-width: 480px;
   padding-left: 25px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .nav-list {
@@ -461,24 +462,30 @@ img {
 .social-link-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 90px;
   font-size: 18px;
   line-height: 1.22;
 }
 .social-link-list .item {
   padding-left: 10px;
   padding-right: 10px;
-  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .social-link-list .item a {
   color: var(--accent-color);
 }
+.social-link-list .item:nth-child(2) {
+  margin-right: 10px;
+}
+.social-link-list .item:nth-child(3),
 .social-link-list .item:first-child {
   padding-left: 0;
-  border: none;
+  margin-right: 10px;
 }
 .social-link-list .item:last-child {
   padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  border: none;
 }
 
 .btn-burger.is-open {
