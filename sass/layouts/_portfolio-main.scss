@@ -4,6 +4,7 @@
 
 .portfolio-card {
   margin-bottom: 30px;
+  // max-width: 480px;
 
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -17,10 +18,12 @@
 .card-decoration {
   position: relative;
   overflow: hidden;
-  img {
+  
+  height: 294px;
+    img {
+    height: 100%;
     width: 100%;
-    max-width: 480px;
-    height: 294px;
+    object-fit: cover;
   }
 }
 .overlay {
@@ -41,10 +44,13 @@
 }
 
 .card-description {
+  
+
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+
 }
 
 .portfolio-title {

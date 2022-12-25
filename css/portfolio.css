@@ -50,11 +50,13 @@
 .card-decoration {
   position: relative;
   overflow: hidden;
+  height: 294px;
 }
 .card-decoration img {
+  height: 100%;
   width: 100%;
-  max-width: 480px;
-  height: 294px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .overlay {
