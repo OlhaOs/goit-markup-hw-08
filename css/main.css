@@ -460,7 +460,8 @@ img {
 
 .social-link-list {
   display: flex;
-  padding-bottom: 48px;
+  flex-wrap: wrap;
+  padding-bottom: 90px;
   font-size: 18px;
   line-height: 1.22;
 }
