@@ -2,15 +2,14 @@
     display: none;
     &.is-open {
         display: flex;
-        // position: fixed;
         flex-direction: column;
         justify-content: space-between;
+        width: 100vw;
         height: 100vh;
         overflow: hidden;
 
         max-width: 480px;
         padding-left: 25px;
-
         padding-top: 50px;
     }
 }
