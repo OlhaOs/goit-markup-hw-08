@@ -52,7 +52,8 @@
   overflow: hidden;
 }
 .card-decoration img {
-  width: 450px;
+  width: 100%;
+  max-width: 480px;
   height: 294px;
 }
 
