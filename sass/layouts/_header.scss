@@ -3,24 +3,197 @@
     overflow: hidden;
 
     border-bottom: 1px solid #ececec;
-}
-.nav-list,
-.contact-link {
-    display: none;
-}
-.mob-menu {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-.btn-burger {
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
 
-    &:hover svg {
-        fill: var(--accent-color);
+    .container {
+        @media (min-width: 768px) {
+            display: flex;
+        }
     }
 }
-.close-burger.is-hidden {
+
+.menu-container {
     display: none;
+    &.is-open {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+
+        max-width: 480px;
+        padding: 48px 25px;
+    }
+    @media (min-width: 768px) {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    .item:not(:last-child) {
+        margin-bottom: 32px;
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+            margin-right: 50px;
+        }
+    }
+    .item a:hover {
+        color: var(--accent-color);
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        margin-left: 93px;
+        margin-right: 114px;
+
+        font-size: 14px;
+        line-height: 1.14;
+    }
+}
+.contact-link {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: 768px) {
+        flex-direction: column;
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    svg {
+        display: none;
+
+        &.icon-envelope {
+            width: 14px;
+            height: 10px;
+            
+            @media (min-width: 1200px) {
+                width: 16px;
+                height: 12px;
+            }
+        }
+        &.icon-phone {
+            width: 10px;
+            height: 14px;
+            @media (min-width: 1200px) {
+                height: 16px;
+            }
+        }
+        @media (min-width: 768px) {
+            display: inline;
+            margin-right: 7px;
+            fill: var(--secondary-color);
+        }
+        @media (min-width: 1200px) {
+            display: inline;
+            margin-right: 10px;
+            fill: var(--secondary-color);
+        }
+    }
+    .mail {
+        font-weight: 400;
+
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: #757575;
+        margin-bottom: 64px;
+
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        @media (min-width: 1200px) {
+            margin-bottom: 0;
+            margin-right: 40px;
+
+            font-size: 14px;
+            line-height: 1.14;
+
+            &:hover {
+                color: var(--accent-color);
+                svg {
+                    fill: var(--accent-color);
+                }
+            }
+        }
+    }
+
+    .phone {
+        margin-bottom: 32px;
+
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--accent-color);
+
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+
+            font-size: 12px;
+            color: #757575;
+        }
+        @media (min-width: 1200px) {
+            margin-bottom: 0;
+
+            font-size: 14px;
+            line-height: 1.14;
+
+            &:hover {
+                color: var(--accent-color);
+                svg {
+                    fill: var(--accent-color);
+                }
+            }
+        }
+    }
+
+    .nav-link {
+        @media (min-width: 768px) {
+            display: block;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            position: relative;
+
+            color: var(--main-color);
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+
+            &.accent::after {
+                display: block;
+                content: "";
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                border: 4px solid var(--accent-color);
+                border-radius: 4px;
+            }
+            &.accent {
+                color: var(--accent-color);
+            }
+        }
+    }
 }

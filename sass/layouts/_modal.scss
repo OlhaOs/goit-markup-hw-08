@@ -7,6 +7,7 @@
     top: 0;
     left: 0;
     display: block;
+
     width: 100vw;
     height: 100vh;
 
@@ -14,10 +15,18 @@
 }
 .modal {
     position: relative;
-    padding: 40px;
-    margin: 93px 15px;
+    top: 50%;
+    left: 50%;
 
+    max-width: 450px;
+    padding: 40px;
+
+    transform: translate(-50%, -50%);
     background-color: #fff;
+
+    @media (min-width: 1200px) {
+        max-width: 528px;
+    }
 }
 .btn-close {
     position: absolute;
@@ -49,7 +58,6 @@
     position: relative;
 
     margin-bottom: 10px;
-  
 }
 
 .input-form {
@@ -103,6 +111,7 @@
     letter-spacing: 0.01em;
 }
 .contract-terms {
+    text-decoration: underline;
     color: var(--accent-color);
 }
 .field-form.textarea {
@@ -115,7 +124,6 @@
     margin-bottom: 30px;
 }
 .text-form.checkbox {
-    display: inline-flex;
     margin-left: 7px;
     margin-bottom: 0;
 
@@ -164,6 +172,5 @@
     width: 200px;
     height: 50px;
 
-    // padding: 10px 80px;
     text-align: center;
 }
