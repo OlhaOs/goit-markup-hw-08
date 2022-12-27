@@ -1,6 +1,16 @@
 .filter {
   padding-bottom: 40px;
 }
+@media (min-width: 768px) {
+  .filter {
+    padding-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .filter {
+    padding-bottom: 50px;
+  }
+}
 
 .btn-filter {
   padding: 6px 22px;
@@ -9,12 +19,14 @@
   line-height: 1.62;
   letter-spacing: 0.03em;
   border: none;
+  border-radius: 4px;
   background-color: #f5f4fa;
   color: #212121;
 }
 .btn-filter:hover {
   background-color: var(--accent-color);
   color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-list {
@@ -22,11 +34,23 @@
   flex-wrap: wrap;
   width: 274px;
 }
+@media (min-width: 768px) {
+  .filter-list {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
 .filter-list .item:not(:last-child) {
   margin-right: 8px;
 }
 .filter-list .item:nth-child(3) {
   margin-right: 0;
+}
+@media (min-width: 768px) {
+  .filter-list .item:nth-child(3) {
+    margin-right: 8px;
+  }
 }
 .filter-list .item:nth-child(-n+3) {
   margin-bottom: 15px;
@@ -35,16 +59,46 @@
 .portfolio {
   padding-top: 0;
 }
+@media (min-width: 1200px) {
+  .portfolio {
+    padding-bottom: 94px;
+  }
+}
 
-.portfolio-card {
+@media (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.portfolio-list .portfolio-card:not(:last-child) {
   margin-bottom: 30px;
 }
-.portfolio-card:hover {
+.portfolio-list .portfolio-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow 250ms linear;
 }
-.portfolio-card:hover .overlay {
+.portfolio-list .portfolio-card:hover .overlay {
   transform: translateY(0);
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list .portfolio-card {
+    width: calc(50% - 15px);
+  }
+  .portfolio-list .portfolio-card:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-list .portfolio-card {
+    width: calc(33.3333333333% - 30px);
+  }
+  .portfolio-list .portfolio-card:not(:nth-child(3n+3)) {
+    margin-right: 30px;
+  }
+  .portfolio-list .portfolio-card:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
 }
 
 .card-decoration {

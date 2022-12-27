@@ -14,13 +14,13 @@
     }
 
     .item:not(:nth-child(even)) {
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             margin-right: 30px;
         }
     }
 
     .item:nth-child(-n + 4) {
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             margin-bottom: 30px;
         }
         @media (min-width: 1200px) {
@@ -59,8 +59,8 @@
         @media (min-width: 768px) {
             width: calc(100% / 3 - 60px);
         }
-        @media (min-width: 1200px) {
-            width: 100%;
+        @media (min-width: 768px) {
+            width: calc(100% / 3 - 60px);
         }
     }
 }

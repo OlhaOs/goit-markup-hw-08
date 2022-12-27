@@ -6,16 +6,22 @@
 }
 
 .hero-tltle {
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 30px;
+    width: 360px;
+    margin: 0 auto 30px auto;
 
     font-weight: 900;
-    // font-size: 44px;
     font-size: 26px;
     line-height: 1.61;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
+    color: #ffffff;
+
+    @media (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 .hero-button {
     @extend %btn;
