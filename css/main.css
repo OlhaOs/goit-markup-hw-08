@@ -409,6 +409,9 @@ img {
 .social-media-footer li .social-link .icon {
   fill: #ffffff;
 }
+.social-media-footer li .social-link:hover {
+  background-color: var(--accent-color);
+}
 
 .footer-email {
   width: 100%;

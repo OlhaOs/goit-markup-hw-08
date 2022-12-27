@@ -65,6 +65,9 @@
         & .icon {
             fill: #ffffff;
         }
+        &:hover {
+            background-color: var(--accent-color);
+        }
     }
 }
 .footer-email {
